@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="Description"
+      content="Bootstrap Responsive Admin Web Dashboard HTML5 Template"
+    />
+    <meta name="Author" content="Spruko Technologies Private Limited" />
+    <meta
+      name="Keywords"
+      content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"
+    />
+
+    <!-- Title -->
+    <title>ProxyADS - Comprar proxies</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="../assets/img/brand/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Icons css -->
+    <link href="../assets/css/icons.css" rel="stylesheet" />
+
+    <!--  bootstrap css-->
+    <link
+      id="style"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style css -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/style-dark.css" rel="stylesheet" />
+    <link href="../assets/css/style-transparent.css" rel="stylesheet" />
+
+    <!---Skinmodes css-->
+    <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+  </head>
+
+  <body class="ltr main-body app sidebar-mini">
+    <!-- Loader -->
+    <div id="global-loader">
+      <img src="../assets/img/loader.svg" class="loader-img" alt="Loader" />
+    </div>
+    <!-- /Loader -->
+
+    <!-- Page -->
+    <div class="page">
+      <div>
+        <!-- main-sidebar -->
+        <div class="sticky">
+          <aside class="app-sidebar">
+            <div class="main-sidebar-header active">
+              <a class="header-logo active" href="index.html">
+                <img
+                  src="../assets/img/brand/proxyads.png"
+                  class="main-logo desktop-logo"
+                  alt="logo"
+                />
+                <img
+                  src="../assets/img/brand/favicon.png"
+                  class="main-logo mobile-logo"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="main-sidemenu">
+              <div class="slide-left disabled" id="slide-left">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#7b8191"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+                  />
+                </svg>
+              </div>
+              <ul class="side-menu">
+                <li class="slide">
+                  <a class="side-menu__item" href="index.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/início.svg"
+                      alt=""
+                    /><span class="side-menu__label">Início</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item active" href="minhas-proxies.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/proxies.svg"
+                      alt=""
+                    /><span class="side-menu__label">Minhas proxies</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="minha-assinatura.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/wallet.svg"
+                      alt=""
+                    /><span class="side-menu__label">Minha assinatura</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="ajuda.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/help-circle.svg"
+                      alt=""
+                    /><span class="side-menu__label">Central de ajuda</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="configuracoes.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/settings.svg"
+                      alt=""
+                    /><span class="side-menu__label">Configurações</span></a
+                  >
+                </li>
+              </ul>
+              <div class="m-3 p-3 bg-gray-100 rounded">
+                <p class="tx-16 tx-bold tx-primary mg-b-8">
+                  Precisa de mais proxies?
+                </p>
+                <p class="tx-14 tx-gray-600 mg-b-20">
+                  Faça um upgrade de seu plano e receba agora novos IPs
+                </p>
+                <button class="btn btn-primary w-100">Comprar proxies</button>
+              </div>
+              <div class="slide-right" id="slide-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#7b8191"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- main-sidebar -->
+      </div>
+
+      <!-- main-content -->
+      <div class="main-content app-content">
+        <!-- container -->
+        <div class="main-container container-fluid px-32">
+          <!-- header -->
+          <div
+            class="mg-y-32 d-flex align-items-center justify-content-between"
+          >
+            <div>
+              <a
+                class="d-flex align-items-center tx-primary tx-semibold tx-14"
+                href="index.html"
+                ><i class="fe fe-arrow-left mg-r-4"></i>Voltar</a
+              >
+            </div>
+            <div>
+              <div>
+                <li class="dropdown main-profile-menu nav nav-item">
+                  <div
+                    class="d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                  >
+                    <a class="profile-user d-flex" href=""
+                      ><img alt="" src="../assets/img/faces/2.jpg" class="" />
+                    </a>
+                    <div class="mg-l-12">
+                      <p class="mg-0 tx-semibold tx-14">Samuel</p>
+                      <p class="mg-0 tx-14 tx-gray-600">samuel@email.com</p>
+                    </div>
+                    <i class="fa fa-chevron-down tx-gray-600 mg-l-15"></i>
+                  </div>
+                  <div class="dropdown-menu">
+                    <div class="menu-header-content p-3 border-bottom">
+                      <div class="d-flex wd-100p">
+                        <div class="main-img-user">
+                          <img
+                            alt=""
+                            src="../assets/img/faces/2.jpg"
+                            class=""
+                          />
+                        </div>
+                        <div class="ms-3 my-auto">
+                          <h6 class="tx-15 font-weight-semibold mb-0">
+                            Samuel
+                          </h6>
+                          <span class="dropdown-title-text subtext op-6 tx-12"
+                            >Premium Member</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <a class="dropdown-item" href="profile.html"
+                      ><i class="far fa-user-circle"></i>Profile</a
+                    >
+                    <a class="dropdown-item" href="chat.html"
+                      ><i class="far fa-smile"></i> chat</a
+                    >
+                    <a class="dropdown-item" href="mail-read.html"
+                      ><i class="far fa-envelope"></i>Inbox</a
+                    >
+                    <a class="dropdown-item" href="mail.html"
+                      ><i class="far fa-comment-dots"></i>Messages</a
+                    >
+                    <a class="dropdown-item" href="mail-settings.html"
+                      ><i class="far fa-sun"></i> Settings</a
+                    >
+                    <a class="dropdown-item" href="signup.html"
+                      ><i class="far fa-arrow-alt-circle-left"></i> Sign Out</a
+                    >
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+          <!-- header -->
+          <!-- title -->
+          <div
+            class="d-flex justify-content-between align-items-center mg-b-32"
+          >
+            <div class="flex-fill">
+              <h1 class="main-content-title mg-b-0">Comprar Proxies</h1>
+              <h6 class="mg-b-0 mg-b-lg-1 tx-16 tx-normal tx-gray-600">
+                Conheça nossos planos
+              </h6>
+            </div>
+            <ol class="c-stepper">
+              <li class="c-stepper__item active done">
+                <h3 class="c-stepper__title">Configurar plano</h3>
+              </li>
+              <li class="c-stepper__item active">
+                <h3 class="c-stepper__title">Completar dados</h3>
+              </li>
+              <li class="c-stepper__item">
+                <h3 class="c-stepper__title">Pagamento</h3>
+              </li>
+              <li class="c-stepper__item">
+                <h3 class="c-stepper__title">Confirmação</h3>
+              </li>
+            </ol>
+          </div>
+          <!-- title -->
+
+          <div class="row">
+            <div class="col-lg-7 col-xl-8">
+              <div class="card">
+                <div class="card-body p-4">
+                  <h3 class="tx-18 tx-semibold tx-gray-900">
+                    Complete seu cadastro
+                  </h3>
+                  <p class="mg-b-15 tx-16 tx-gray-600">
+                    Para prosseguir preencha os dados abaixo
+                  </p>
+                  <form action="" id="register-form">
+                    <div class="row">
+                      <div class="col-7">
+                        <div class="form-group">
+                          <label for="nome" class="tx-14 tx-medium tx-gray-700"
+                            >Nome completo</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nome"
+                            required
+                            placeholder="Insira seu nome completo"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <div class="form-group">
+                          <label for="cpf" class="tx-14 tx-medium tx-gray-700"
+                            >CPF</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            maxlength="14"
+                            onkeyup="handleCPF(event)"
+                            id="cpf"
+                            required
+                            placeholder="CPF"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="nome" class="tx-14 tx-medium tx-gray-700"
+                            >Qual seu whatsapp?</label
+                          >
+                          <div class="row">
+                            <div class="col-4">
+                              <select
+                                name="dde"
+                                class="form-control form-select"
+                                data-bs-placeholder="Selecione o codigo do pais"
+                              >
+                                <option value="+55">+55</option>
+                                <option value="+1">+1</option>
+                              </select>
+                            </div>
+                            <div class="col-8">
+                              <input
+                                type="tel"
+                                class="form-control"
+                                id="telefone"
+                                maxlength="15"
+                                required
+                                onkeyup="handlePhone(event)"
+                                placeholder="(--) ----- ----"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="email" class="tx-14 tx-medium tx-gray-700"
+                            >E-mail</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            required
+                            disabled
+                            placeholder="Insira seu e-mail"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label for="cep" class="tx-14 tx-medium tx-gray-700"
+                            >CEP</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="cep"
+                            placeholder="CEP"
+                            required
+                            onkeyup="handleZipCode(event)"
+                            maxlength="9"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div class="form-group">
+                          <label for="rua" class="tx-14 tx-medium tx-gray-700"
+                            >Rua/Av</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="rua"
+                            placeholder="Rua/Av"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label
+                            for="numero"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Número</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="numero"
+                            placeholder="Número"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label
+                            for="complemento"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Complemento</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="complemento"
+                            placeholder="Complemento"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <div class="form-group">
+                          <label
+                            for="bairro"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Bairro</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="bairro"
+                            placeholder="Bairro"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label
+                            for="estado"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Estado</label
+                          >
+                          <select
+                            id="estado"
+                            name="estado"
+                            class="form-control form-select"
+                            data-bs-placeholder="Selecione o estado"
+                            required
+                          >
+                            <option>Estado</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="São Paulo">São Paulo</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div class="form-group">
+                          <label
+                            for="cidade"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Cidade</label
+                          >
+                          <select
+                            id="cidade"
+                            name="cidade"
+                            class="form-control form-select"
+                            data-bs-placeholder="Selecione a cidade"
+                            required
+                          >
+                            <option>Cidade</option>
+                            <option value="Belo Horizonte">
+                              Belo Horizonte
+                            </option>
+                            <option value="São Paulo">São Paulo</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary tx-medium w-100 mg-t-20"
+                    >
+                      Salvar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="tx-18 tx-semibold mg-b-15">Resumo do seu plano</h3>
+                  <div class="bg-gray-100 py-4 px-4 mg-b-25 rounded-1">
+                    <p class="tx-bold tx-16">Valor do plano</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500">Ip's selecionados</span>
+                      <span class="tx-16" id="numProxies"></span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <span class="tx-bold tx-14">Subtotal:</span>
+                      <div>
+                        <p
+                          class="tx-primary tx-bold tx-24 mg-0"
+                          id="subtotal-price"
+                        ></p>
+                        <p class="tx-14 tx-gray-600 text-end mg-0">/por mês</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="tx-14 tx-gray-500">Total</p>
+                    <p id="total-price" class="tx-24 tx-semibold"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Container -->
+      </div>
+      <!-- /main-content -->
+    </div>
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="las la-arrow-up"></i></a>
+
+    <!-- JQuery min js -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/moment/moment.js"></script>
+
+    <!--Internal Sparkline js -->
+    <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+
+    <!--Internal  Perfect-scrollbar js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--Internal Ion.rangeSlider.min js -->
+    <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+    <!-- Internal page script -->
+    <script src="../assets/js/completar-dados.js"></script>
+
+    <!-- Eva-icons js -->
+    <script src="../assets/js/eva-icons.min.js"></script>
+
+    <!-- Sidebar js -->
+    <script src="../assets/plugins/side-menu/sidemenu.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- Theme Color js -->
+    <script src="../assets/js/themecolor.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>

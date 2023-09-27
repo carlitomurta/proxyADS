@@ -27,13 +27,16 @@ function watch() {
   gulp
     .watch("Nowa/assets/scss/**/*.scss", { events: "all" }, css)
     .on("change", browserSync.reload);
+  gulp
+    .watch("Nowa/assets/js/**/*.js", { events: "all" })
+    .on("change", browserSync.reload);
 }
 
 function serve(cb) {
   browserSync.init({
     server: {
       baseDir: "Nowa",
-      index: "HTML/index.html",
+      index: "HTML/comprar-pagamento.html",
     },
   });
   console.log("serve processed");

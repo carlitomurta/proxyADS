@@ -6,6 +6,7 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
+  border: 1px solid $gray-200;
   border-radius: 1rem;
 
   button {
@@ -19,5 +20,15 @@
     font-size: 36px;
     font-weight: 600;
     margin: 0;
+    border: none;
+    width: 80px;
+    text-align: center;
+    background-color: transparent;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: textfield;
+      margin: 0;
+    }
   }
 }

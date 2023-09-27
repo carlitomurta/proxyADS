@@ -21463,6 +21463,15 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
     margin: 0;
 }
 
+.brand-circle-icon {
+    min-width: 48px;
+    min-height: 48px;
+    background-color: #e8f1ff;
+    border-radius: 100%;
+    padding: 10px 14px;
+    margin-right: 12px;
+}
+
 /*-----IE issues-----*/
 *::-ms-backdrop,
 .main-header-center {
@@ -22571,6 +22580,19 @@ html.fullscreen-button .app-content {
     color: var(--primary-bg-color);
 }
 
+.c-stepper__item.done:before {
+    content: "✓";
+    font-size: 12px;
+    border: none;
+    color: var(--primary-bg-color);
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 2px var(--primary-bg-color);
+}
+
+.c-stepper__item.done:after {
+    background-color: var(--primary-bg-color);
+}
+
 .c-stepper__item .c-stepper__title {
     color: #4d5875;
     font-weight: 600;
@@ -22586,6 +22608,7 @@ html.fullscreen-button .app-content {
     padding: 0.5rem;
     max-width: 300px;
     margin: 0 auto;
+    border: 1px solid #f0f0f8;
     border-radius: 1rem;
 }
 
@@ -22597,6 +22620,17 @@ html.fullscreen-button .app-content {
     color: #323251;
     font-size: 36px;
     font-weight: 600;
+    margin: 0;
+    border: none;
+    width: 80px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.counter .count-marker::-webkit-outer-spin-button,
+.counter .count-marker::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
     margin: 0;
 }
 
@@ -69242,6 +69276,18 @@ button.bg-dark:focus {
 
 .rounded {
     border-radius: 5px !important;
+}
+
+.rounded-1 {
+    border-radius: 12px !important;
+}
+
+.rounded-2 {
+    border-radius: 16px !important;
+}
+
+.rounded-3 {
+    border-radius: 24px !important;
 }
 
 .rounded-top {

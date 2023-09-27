@@ -7,7 +7,7 @@
 }
 
 .border-end {
- border-right: 1px solid $border !important;
+  border-right: 1px solid $border !important;
 }
 
 .border-bottom {
@@ -15,7 +15,7 @@
 }
 
 .border-start {
- border-left: 1px solid $border !important;
+  border-left: 1px solid $border !important;
 }
 
 .border-0 {
@@ -82,6 +82,18 @@
   border-radius: 5px !important;
 }
 
+.rounded-1 {
+  border-radius: 12px !important;
+}
+
+.rounded-2 {
+  border-radius: 16px !important;
+}
+
+.rounded-3 {
+  border-radius: 24px !important;
+}
+
 .rounded-top {
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
@@ -129,14 +141,14 @@
 }
 
 .bd-t {
-  border-top: 1px solid  $border;
+  border-top: 1px solid $border;
 }
 
 .bd-e {
- border-right: 1px solid $border;
+  border-right: 1px solid $border;
 }
 .bd-s {
- border-left: 1px solid $border;
+  border-left: 1px solid $border;
 }
 
 .bd-b {
@@ -144,7 +156,7 @@
 }
 
 .bd-l {
- border-left: 1px solid $border;
+  border-left: 1px solid $border;
 }
 
 .bd-y {
@@ -153,8 +165,8 @@
 }
 
 .bd-x {
- border-left: 1px solid $border;
- border-right: 1px solid $border;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
 }
 
 .bd-0 {
@@ -182,11 +194,11 @@
 }
 
 .bd-t-0 {
-  border-top: 0!important;
+  border-top: 0 !important;
 }
 
 .bd-e-0 {
- border-right: 0;
+  border-right: 0;
 }
 
 .bd-b-0 {
@@ -194,7 +206,7 @@
 }
 
 .bd-s-0 {
- border-left: 0;
+  border-left: 0;
 }
 
 .bd-y-0 {
@@ -208,13 +220,13 @@
 }
 
 .bd-x-0 {
- border-left-width: 0;
- border-right-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
 }
 
 .bd-x-1 {
- border-left-width: 1px;
- border-right-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
 }
 
 .bd-primary {
@@ -236,11 +248,11 @@
 .bd-info {
   border-color: $info !important;
 }
-.bd-secondary{
+.bd-secondary {
   border-color: $secondary !important;
 }
 
-.bd-teal{
+.bd-teal {
   border-color: $teal !important;
 }
 
@@ -261,7 +273,7 @@
 }
 
 .bd-gray-400 {
-  border-color:$gray-400;
+  border-color: $gray-400;
 }
 
 .bd-gray-500 {
@@ -315,8 +327,8 @@
 .bd-white-8 {
   border-color: $white-8;
 }
-radius-1{
- border-radius: 1px;
+radius-1 {
+  border-radius: 1px;
 }
 
 .radius-5 {
@@ -361,7 +373,7 @@ radius-1{
   }
 
   .bd-xs-e {
-   border-right: 1px solid $border;
+    border-right: 1px solid $border;
   }
 
   .bd-xs-b {
@@ -369,7 +381,7 @@ radius-1{
   }
 
   .bd-xs-s {
-   border-left: 1px solid $border;
+    border-left: 1px solid $border;
   }
 
   .bd-xs-y {
@@ -378,8 +390,8 @@ radius-1{
   }
 
   .bd-xs-x {
-   border-left: 1px solid $border;
-   border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
   }
 }
 
@@ -393,11 +405,11 @@ radius-1{
   }
 
   .bd-sm-e {
-   border-right: 1px solid $border;
+    border-right: 1px solid $border;
   }
 
   .bd-sm-e-0 {
-   border-right: 0 !important;
+    border-right: 0 !important;
   }
 
   .bd-sm-b {
@@ -405,11 +417,11 @@ radius-1{
   }
 
   .bd-sm-s {
-   border-left: 1px solid $border;
+    border-left: 1px solid $border;
   }
 
   .bd-sm-s-0 {
-   border-left: 0 !important;
+    border-left: 0 !important;
   }
 
   .bd-sm-y {
@@ -418,8 +430,8 @@ radius-1{
   }
 
   .bd-sm-x {
-   border-left: 1px solid $border;
-   border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
   }
 }
 
@@ -433,7 +445,7 @@ radius-1{
   }
 
   .bd-md-e {
-   border-right: 1px solid $border;
+    border-right: 1px solid $border;
   }
 
   .bd-md-b {
@@ -441,7 +453,7 @@ radius-1{
   }
 
   .bd-md-s {
-   border-left: 1px solid $border;
+    border-left: 1px solid $border;
   }
 
   .bd-md-y {
@@ -450,8 +462,8 @@ radius-1{
   }
 
   .bd-md-x {
-   border-left: 1px solid $border;
-   border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
   }
 }
 
@@ -465,7 +477,7 @@ radius-1{
   }
 
   .bd-lg-enf {
-   border-right: 1px solid $border;
+    border-right: 1px solid $border;
   }
 
   .bd-lg-b {
@@ -473,7 +485,7 @@ radius-1{
   }
 
   .bd-lg-s {
-   border-left: 1px solid $border;
+    border-left: 1px solid $border;
   }
 
   .bd-lg-y {
@@ -482,8 +494,8 @@ radius-1{
   }
 
   .bd-lg-x {
-   border-left: 1px solid $border;
-   border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
   }
 }
 
@@ -497,7 +509,7 @@ radius-1{
   }
 
   .bd-xl-e {
-   border-right: 1px solid $border;
+    border-right: 1px solid $border;
   }
 
   .bd-xl-b {
@@ -505,7 +517,7 @@ radius-1{
   }
 
   .bd-xl-s {
-   border-left: 1px solid $border;
+    border-left: 1px solid $border;
   }
 
   .bd-xl-y {
@@ -514,8 +526,8 @@ radius-1{
   }
 
   .bd-xl-x {
-   border-left: 1px solid $border;
-   border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
   }
 }
 
@@ -546,19 +558,19 @@ radius-1{
   border-bottom-right-radius: 5px !important;
 }
 .br-bs-5 {
-    border-bottom-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
 }
 
 .border-start-primary {
- border-left-color: $primary !important;
+  border-left-color: $primary !important;
 }
 
 .border-start-success {
- border-left-color: $success !important;
+  border-left-color: $success !important;
 }
 
 .border-start-warning {
- border-left-color: $warning !important;
+  border-left-color: $warning !important;
 }
 
 .border-primary-light {
@@ -572,29 +584,29 @@ radius-1{
 .border-secondary-light {
   border: 1px solid #f1cbd3;
 }
-.br-5{
+.br-5 {
   border-radius: 5px !important;
 }
 @media (max-width: 480px) {
   .bd-xs-e-0 {
-   border-right: 0 !important;
+    border-right: 0 !important;
   }
   .bd-xs-s-0 {
-   border-left:0 !important;
+    border-left: 0 !important;
   }
 }
 @media (max-width: 991px) {
   .bd-md-e-0 {
-   border-right: 0 !important;
+    border-right: 0 !important;
   }
 }
 @media (max-width: 1024px) {
   .bd-lg-e-0 {
-   border-right: 0 !important;
+    border-right: 0 !important;
   }
 }
 @media (max-width: 1366px) {
   .bd-xl-e-0 {
-   border-right: 0 !important;
+    border-right: 0 !important;
   }
 }
