@@ -1,0 +1,46 @@
+.btn-payment-method {
+  display: flex;
+  align-items: center;
+  border-color: $gray-200 !important;
+  border-radius: 10px !important;
+  color: $gray-600 !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 1rem;
+  text-align: left;
+  margin: 0;
+  height: 64px;
+  vertical-align: middle;
+  &:hover {
+    svg {
+      fill: $white;
+    }
+  }
+  svg {
+    fill: $gray-600;
+  }
+}
+
+.btn-check:active + .btn-payment-method,
+.btn-check:checked + .btn-payment-method {
+  color: $primary !important;
+  background-color: $white !important;
+  border-color: $primary !important;
+  svg {
+    fill: $primary;
+  }
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    content: "\2714";
+    color: $white;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: $primary;
+    border-radius: 100%;
+    padding: 0px 3px;
+  }
+}

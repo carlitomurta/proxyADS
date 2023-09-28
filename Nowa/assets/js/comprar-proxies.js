@@ -1,3 +1,7 @@
+var changeEvent = new Event("change");
+
+const slider = document.getElementById("rangeslider");
+
 $(function () {
   "use strict";
 
@@ -29,46 +33,50 @@ $(function () {
 
   numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
 
-  const slider = $(".rangeslider")
-    .ionRangeSlider({
-      min: 1,
-      max: maxProxies,
-      from: numProxies,
-      onChange: function (data) {
-        numProxies = data.from;
-        counter.value = numProxies;
-        subtotal.innerHTML = currencyFormatter.format(
-          numProxies * proxieValueMultiplier
-        );
-        total.innerHTML = currencyFormatter.format(
-          numProxies * proxieValueMultiplier
-        );
-      },
-    })
-    .data("ionRangeSlider");
+  slider.min = 1;
+  slider.max = maxProxies;
+  slider.value = numProxies;
+  slider.dispatchEvent(changeEvent);
+
+  slider.addEventListener("input", (e) => {
+    e.preventDefault();
+    numProxies = e.target.value;
+    counter.value = numProxies;
+    subtotal.innerHTML = currencyFormatter.format(
+      numProxies * proxieValueMultiplier
+    );
+    total.innerHTML = currencyFormatter.format(
+      numProxies * proxieValueMultiplier
+    );
+    numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
+  });
 
   $("#add-proxie").on("click", function (e) {
     e.preventDefault();
     if (numProxies <= maxProxies) numProxies += 1;
     counter.value = numProxies;
-    slider.update({ from: numProxies });
+    slider.value = numProxies;
+    slider.dispatchEvent(changeEvent);
     subtotal.innerHTML = currencyFormatter.format(
       numProxies * proxieValueMultiplier
     );
     total.innerHTML = currencyFormatter.format(
       numProxies * proxieValueMultiplier
     );
+    numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
   });
   $("#sub-proxie").on("click", function (e) {
     e.preventDefault();
     if (numProxies > 1) numProxies -= 1;
     counter.value = numProxies;
-    slider.update({ from: numProxies });
+    slider.value = numProxies;
+    slider.dispatchEvent(changeEvent);
     subtotal.innerHTML = currencyFormatter.format(
       numProxies * proxieValueMultiplier
     );
     total.innerHTML = currencyFormatter.format(
       numProxies * proxieValueMultiplier
     );
+    numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
   });
 });

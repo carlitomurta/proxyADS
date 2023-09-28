@@ -156,8 +156,8 @@ fieldset:disabled a.btn {
 
   &:hover {
     color: $white;
-    background-color: #068f78;
-    border-color: #1a9c86;
+    background-color: $success-hover;
+    border-color: $success-hover;
   }
 
   &:focus,

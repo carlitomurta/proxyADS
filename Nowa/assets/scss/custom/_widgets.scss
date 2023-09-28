@@ -67,3 +67,33 @@
     }
   }
 }
+
+.warning-icon {
+  display: block;
+  background-color: #fef0c7;
+  border: 8px solid #fffaeb;
+  border-radius: 100%;
+  color: $warning;
+  padding: 7px;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  i {
+    display: block;
+  }
+}
+
+.success-icon {
+  display: block;
+  background-color: #d1fadf;
+  border: 8px solid #ecfdf3;
+  border-radius: 100%;
+  color: $success;
+  padding: 7px;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  i {
+    display: block;
+  }
+}

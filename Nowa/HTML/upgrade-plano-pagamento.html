@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="Description"
+      content="Bootstrap Responsive Admin Web Dashboard HTML5 Template"
+    />
+    <meta name="Author" content="Spruko Technologies Private Limited" />
+    <meta
+      name="Keywords"
+      content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"
+    />
+
+    <!-- Title -->
+    <title>ProxyADS - Upgrade de plano</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="../assets/img/brand/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Icons css -->
+    <link href="../assets/css/icons.css" rel="stylesheet" />
+
+    <!--  bootstrap css-->
+    <link
+      id="style"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style css -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/style-dark.css" rel="stylesheet" />
+    <link href="../assets/css/style-transparent.css" rel="stylesheet" />
+
+    <!---Skinmodes css-->
+    <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+  </head>
+
+  <body class="ltr main-body app sidebar-mini">
+    <!-- Loader -->
+    <div id="global-loader">
+      <img src="../assets/img/loader.svg" class="loader-img" alt="Loader" />
+    </div>
+    <!-- /Loader -->
+
+    <!-- Page -->
+    <div class="page">
+      <div>
+        <!-- main-sidebar -->
+        <div class="sticky">
+          <aside class="app-sidebar">
+            <div class="main-sidebar-header active">
+              <a class="header-logo active" href="index.html">
+                <img
+                  src="../assets/img/brand/proxyads.png"
+                  class="main-logo desktop-logo"
+                  alt="logo"
+                />
+                <img
+                  src="../assets/img/brand/favicon.png"
+                  class="main-logo mobile-logo"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="main-sidemenu">
+              <div class="slide-left disabled" id="slide-left">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#7b8191"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+                  />
+                </svg>
+              </div>
+              <ul class="side-menu">
+                <li class="slide">
+                  <a class="side-menu__item" href="index.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/início.svg"
+                      alt=""
+                    /><span class="side-menu__label">Início</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item active" href="minhas-proxies.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/proxies.svg"
+                      alt=""
+                    /><span class="side-menu__label">Minhas proxies</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="minha-assinatura.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/wallet.svg"
+                      alt=""
+                    /><span class="side-menu__label">Minha assinatura</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="ajuda.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/help-circle.svg"
+                      alt=""
+                    /><span class="side-menu__label">Central de ajuda</span></a
+                  >
+                </li>
+                <li class="slide">
+                  <a class="side-menu__item" href="configuracoes.html">
+                    <img
+                      class="side-menu__item_icon"
+                      src="../assets/img/svgs/settings.svg"
+                      alt=""
+                    /><span class="side-menu__label">Configurações</span></a
+                  >
+                </li>
+              </ul>
+              <div class="m-3 p-3 bg-gray-100 rounded">
+                <p class="tx-16 tx-bold tx-primary mg-b-8">
+                  Precisa de mais proxies?
+                </p>
+                <p class="tx-14 tx-gray-600 mg-b-20">
+                  Faça um upgrade de seu plano e receba agora novos IPs
+                </p>
+                <button class="btn btn-primary w-100">Comprar proxies</button>
+              </div>
+              <div class="slide-right" id="slide-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#7b8191"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- main-sidebar -->
+      </div>
+
+      <!-- main-content -->
+      <div class="main-content app-content">
+        <!-- container -->
+        <div class="main-container container-fluid px-32">
+          <!-- header -->
+          <div
+            class="mg-y-32 d-flex align-items-center justify-content-between"
+          >
+            <div>
+              <a
+                class="d-flex align-items-center tx-primary tx-semibold tx-14"
+                href="index.html"
+                ><i class="fe fe-arrow-left mg-r-4"></i>Voltar</a
+              >
+            </div>
+            <div>
+              <div>
+                <li class="dropdown main-profile-menu nav nav-item">
+                  <div
+                    class="d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                  >
+                    <a class="profile-user d-flex" href=""
+                      ><img alt="" src="../assets/img/faces/2.jpg" class="" />
+                    </a>
+                    <div class="mg-l-12">
+                      <p class="mg-0 tx-semibold tx-14">Samuel</p>
+                      <p class="mg-0 tx-14 tx-gray-600">samuel@email.com</p>
+                    </div>
+                    <i class="fa fa-chevron-down tx-gray-600 mg-l-15"></i>
+                  </div>
+                  <div class="dropdown-menu">
+                    <div class="menu-header-content p-3 border-bottom">
+                      <div class="d-flex wd-100p">
+                        <div class="main-img-user">
+                          <img
+                            alt=""
+                            src="../assets/img/faces/2.jpg"
+                            class=""
+                          />
+                        </div>
+                        <div class="ms-3 my-auto">
+                          <h6 class="tx-15 font-weight-semibold mb-0">
+                            Samuel
+                          </h6>
+                          <span class="dropdown-title-text subtext op-6 tx-12"
+                            >Premium Member</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <a class="dropdown-item" href="profile.html"
+                      ><i class="far fa-user-circle"></i>Profile</a
+                    >
+                    <a class="dropdown-item" href="chat.html"
+                      ><i class="far fa-smile"></i> chat</a
+                    >
+                    <a class="dropdown-item" href="mail-read.html"
+                      ><i class="far fa-envelope"></i>Inbox</a
+                    >
+                    <a class="dropdown-item" href="mail.html"
+                      ><i class="far fa-comment-dots"></i>Messages</a
+                    >
+                    <a class="dropdown-item" href="mail-settings.html"
+                      ><i class="far fa-sun"></i> Settings</a
+                    >
+                    <a class="dropdown-item" href="signup.html"
+                      ><i class="far fa-arrow-alt-circle-left"></i> Sign Out</a
+                    >
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+          <!-- header -->
+          <!-- title -->
+          <div
+            class="d-flex justify-content-between align-items-center mg-b-32"
+          >
+            <div class="flex-fill">
+              <h1 class="main-content-title mg-b-0">Comprar Proxies</h1>
+              <h6 class="mg-b-0 mg-b-lg-1 tx-16 tx-normal tx-gray-600">
+                Conheça nossos planos
+              </h6>
+            </div>
+            <ol class="c-stepper">
+              <li class="c-stepper__item active done">
+                <h3 class="c-stepper__title">Configurar plano</h3>
+              </li>
+              <li class="c-stepper__item active">
+                <h3 class="c-stepper__title">Pagamento</h3>
+              </li>
+              <li class="c-stepper__item">
+                <h3 class="c-stepper__title">Confirmação</h3>
+              </li>
+            </ol>
+          </div>
+          <!-- title -->
+
+          <div class="row">
+            <div class="col-lg-7 col-xl-8">
+              <div class="card">
+                <div class="card-body p-4">
+                  <div id="payment-method">
+                    <h3 class="tx-18 tx-semibold tx-gray-900 mg-b-25">
+                      Selecione a forma de pagamento
+                    </h3>
+                    <div
+                      class="btn-group gap-3 w-100 mg-b-32"
+                      role="group"
+                      aria-label="Formas de pagamento"
+                    >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="payment-method"
+                        id="credit-card-radio"
+                        checked
+                      />
+                      <label
+                        class="btn btn-outline-primary btn-payment-method"
+                        for="credit-card-radio"
+                        ><i class="fa fa-credit-card tx-16 mg-r-25"></i>Cartão
+                        de crédito</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="payment-method"
+                        id="pix-radio"
+                      />
+                      <label
+                        class="btn btn-outline-primary btn-payment-method"
+                        for="pix-radio"
+                        ><svg
+                          class="mg-r-25"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                        >
+                          <g clip-path="url(#clip0_42_1717)">
+                            <path
+                              d="M16.3767 15.4604C15.9717 15.4618 15.5705 15.3859 15.1961 15.2371C14.8217 15.0884 14.4817 14.8697 14.1957 14.5937L11.0453 11.5555C10.9338 11.4522 10.7849 11.3944 10.63 11.3944C10.4752 11.3944 10.3263 11.4522 10.2148 11.5555L7.05364 14.5985C6.76776 14.8749 6.42783 15.094 6.05346 15.2432C5.6791 15.3923 5.27774 15.4686 4.87258 15.4676H4.25879L8.25048 19.31C8.84919 19.8852 9.66047 20.2082 10.5063 20.2082C11.3521 20.2082 12.1634 19.8852 12.7621 19.31L16.7621 15.4588L16.3767 15.4604Z"
+                            />
+                            <path
+                              d="M4.8759 4.73961C5.28107 4.73854 5.68244 4.8148 6.05681 4.96397C6.43118 5.11314 6.77112 5.33227 7.05696 5.60869L10.2181 8.65244C10.2726 8.70505 10.3373 8.74678 10.4085 8.77526C10.4798 8.80374 10.5562 8.8184 10.6334 8.8184C10.7105 8.8184 10.7869 8.80374 10.8582 8.77526C10.9295 8.74678 10.9942 8.70505 11.0487 8.65244L14.1982 5.62068C14.4838 5.3439 14.8236 5.12449 15.1981 4.97516C15.5725 4.82583 15.974 4.74958 16.3792 4.75081H16.7588L12.7555 0.90034C12.4593 0.615081 12.1076 0.388792 11.7206 0.234403C11.3335 0.0800133 10.9186 0.000549316 10.4997 0.000549316C10.0807 0.000549316 9.66581 0.0800133 9.27875 0.234403C8.89169 0.388792 8.54002 0.615081 8.24384 0.90034L4.25879 4.73961H4.8759Z"
+                            />
+                            <path
+                              d="M20.0651 7.93601L17.6481 5.60943C17.5935 5.631 17.5352 5.64239 17.4762 5.64301H16.3815C15.8095 5.64434 15.2612 5.863 14.8558 6.25143L11.7063 9.2816C11.4226 9.55413 11.0381 9.70719 10.6373 9.70719C10.2365 9.70719 9.8521 9.55413 9.5684 9.2816L6.40644 6.24344C6.00116 5.85471 5.45281 5.63576 4.88069 5.63421H3.52853C3.47166 5.6335 3.41539 5.62294 3.36242 5.60303L0.933016 7.93601C0.335549 8.51234 0 9.29329 0 10.1075C0 10.9217 0.335549 11.7027 0.933016 12.279L3.35993 14.6152C3.41279 14.5949 3.46913 14.5843 3.52604 14.584H4.87737C5.44947 14.5824 5.99778 14.3634 6.40312 13.9748L9.56425 10.9318C9.85238 10.6671 10.2353 10.5195 10.6336 10.5195C11.0319 10.5195 11.4148 10.6671 11.703 10.9318L14.8525 13.9628C15.2579 14.3512 15.8062 14.5699 16.3782 14.5712H17.477C17.5361 14.5717 17.5944 14.5831 17.649 14.6048L20.0659 12.2782C20.3622 11.9931 20.5973 11.6546 20.7577 11.282C20.9181 10.9094 21.0006 10.51 21.0006 10.1067C21.0006 9.70339 20.9181 9.30403 20.7577 8.93144C20.5973 8.55885 20.3622 8.22032 20.0659 7.93521"
+                            />
+                          </g></svg
+                        >Pagar com PIX</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="payment-method"
+                        id="bill-radio"
+                      />
+                      <label
+                        class="btn btn-outline-primary btn-payment-method"
+                        for="bill-radio"
+                        ><i class="fa fa-barcode tx-16 mg-r-25"></i
+                        >Boleto</label
+                      >
+                    </div>
+                  </div>
+                  <!-- cartao de credito -->
+                  <div id="credit-card">
+                    <h2 class="mg-b-20 tx-18 tx-bold tx-primary">
+                      Proteção Anti Fraude
+                    </h2>
+                    <p class="tx-normal tx-16 tx-gray-600 mg-b-32">
+                      Para compras no cartão entre em contato conosco através do
+                      Whatsapp clicando no botão abaixo, em poucos minutos será
+                      liberado para você.
+                    </p>
+                    <button
+                      class="d-flex align-items-center btn btn-success tx-normal px-32 mg-b-90"
+                      style="border-radius: 50px"
+                    >
+                      <i class="fab fa-whatsapp tx-18 mg-r-8"></i>Falar com
+                      suporte
+                    </button>
+                    <div class="d-flex align-items-start">
+                      <img
+                        class="wd-85 mg-r-25"
+                        src="../assets/img/png/compra-segura.png"
+                        alt="Compra segura"
+                      />
+                      <p class="mg-0 tx-14 tx-normal tx-gray-800">
+                        A compra é 100% segura, não armazenamos nenhuma
+                        informação de pagamento. Todos os pagamentos
+                        sãoprocessados pela Vindi, a maior plataforma de
+                        pagamentos do Brasil.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="credit-data" class="hidden">
+                    <p class="tx-semibold tx-16 mg-b-15 tx-gray-900">
+                      Selecione o cartão
+                    </p>
+                    <div class="row">
+                      <div class="col-8 col-lg-9">
+                        <div class="form-group">
+                          <label
+                            for="card-name"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Nome no cartão</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="card-name"
+                            required
+                            placeholder="Insira o nome no cartão"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-3">
+                        <div class="form-group">
+                          <label
+                            for="expire"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Vencimento</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="expire"
+                            required
+                            placeholder="Vencimento"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-8 col-lg-9">
+                        <div class="form-group">
+                          <label
+                            for="card-number"
+                            class="tx-14 tx-medium tx-gray-700"
+                            >Número do cartão</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="card-number"
+                            placeholder="Insira o número do cartão"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-3">
+                        <div class="form-group">
+                          <label for="cvv" class="tx-14 tx-medium tx-gray-700"
+                            >CVV</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="cvv"
+                            maxlength="3"
+                            placeholder="CVV"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-8 col-lg-9">
+                        <div class="form-group">
+                          <label for="cpf" class="tx-14 tx-medium tx-gray-700"
+                            >CPF do propriétário do cartão</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="cpf"
+                            maxlength="14"
+                            onkeyup="handleCPF(event)"
+                            placeholder="CPF"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start mg-t-50">
+                      <img
+                        class="wd-85 mg-r-25"
+                        src="../assets/img/png/compra-segura.png"
+                        alt="Compra segura"
+                      />
+                      <p class="mg-0 tx-14 tx-normal tx-gray-800">
+                        A compra é 100% segura, não armazenamos nenhuma
+                        informação de pagamento. Todos os pagamentos
+                        sãoprocessados pela Vindi, a maior plataforma de
+                        pagamentos do Brasil.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- cartao de credito -->
+                  <!-- pix -->
+                  <div id="pix" class="hidden">
+                    <h2 class="mg-b-6 tx-16 tx-bold tx-primary">
+                      Aprovação imediata
+                    </h2>
+                    <p class="tx-normal tx-14 tx-gray-600 mg-b-25">
+                      O pagamento com Pix é rapidamente processado.
+                    </p>
+                    <h2 class="mg-b-6 tx-16 tx-bold tx-primary">
+                      Receba seus códigos PIX por e-mail
+                    </h2>
+                    <p class="tx-normal tx-14 tx-gray-600">
+                      Enviaremos um código PIX para cada cobrança de assinatura.
+                    </p>
+                    <div class="d-flex align-items-start mg-t-100">
+                      <img
+                        class="wd-85 mg-r-25"
+                        src="../assets/img/png/compra-segura.png"
+                        alt="Compra segura"
+                      />
+                      <p class="mg-0 tx-14 tx-normal tx-gray-800">
+                        A compra é 100% segura, não armazenamos nenhuma
+                        informação de pagamento. Todos os pagamentos
+                        sãoprocessados pela Vindi, a maior plataforma de
+                        pagamentos do Brasil.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="pix-waiting" class="hidden">
+                    <div class="d-flex align-items-center mg-b-32">
+                      <div class="warning-icon mg-r-32">
+                        <i class="far fa-clock"></i>
+                      </div>
+                      <h1 class="tx-18 tx-semibold tx-gray-900 mg-0">
+                        Aguardando pagamento
+                      </h1>
+                    </div>
+                    <p class="tx-semibold tx-14 mg-b-10 tx-gray-900">
+                      Pagamento via PIX
+                    </p>
+                    <p class="tx-14 tx-gray-600 mg-b-32">
+                      Seus proxies serão liberados em até 05 minutos após o
+                      pagamento via PIX
+                    </p>
+                    <div class="d-flex">
+                      <img
+                        width="180"
+                        class="mg-r-8"
+                        src="../assets/img/png/qrcode.png"
+                        alt="QR Code PIX"
+                      />
+                      <div>
+                        <p
+                          id="countdown-pix"
+                          class="tx-28 tx-gray-900 mg-0 lh-normal"
+                        >
+                          20:00
+                        </p>
+                        <div class="d-flex align-items-center mg-b-25">
+                          <svg
+                            class="mg-r-8"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                            fill="none"
+                          >
+                            <g clip-path="url(#clip0_42_1717)">
+                              <path
+                                d="M16.3767 15.4604C15.9717 15.4618 15.5705 15.3859 15.1961 15.2371C14.8217 15.0884 14.4817 14.8697 14.1957 14.5937L11.0453 11.5555C10.9338 11.4522 10.7849 11.3944 10.63 11.3944C10.4752 11.3944 10.3263 11.4522 10.2148 11.5555L7.05364 14.5985C6.76776 14.8749 6.42783 15.094 6.05346 15.2432C5.6791 15.3923 5.27774 15.4686 4.87258 15.4676H4.25879L8.25048 19.31C8.84919 19.8852 9.66047 20.2082 10.5063 20.2082C11.3521 20.2082 12.1634 19.8852 12.7621 19.31L16.7621 15.4588L16.3767 15.4604Z"
+                                fill="#007dff"
+                              />
+                              <path
+                                d="M4.8759 4.73961C5.28107 4.73854 5.68244 4.8148 6.05681 4.96397C6.43118 5.11314 6.77112 5.33227 7.05696 5.60869L10.2181 8.65244C10.2726 8.70505 10.3373 8.74678 10.4085 8.77526C10.4798 8.80374 10.5562 8.8184 10.6334 8.8184C10.7105 8.8184 10.7869 8.80374 10.8582 8.77526C10.9295 8.74678 10.9942 8.70505 11.0487 8.65244L14.1982 5.62068C14.4838 5.3439 14.8236 5.12449 15.1981 4.97516C15.5725 4.82583 15.974 4.74958 16.3792 4.75081H16.7588L12.7555 0.90034C12.4593 0.615081 12.1076 0.388792 11.7206 0.234403C11.3335 0.0800133 10.9186 0.000549316 10.4997 0.000549316C10.0807 0.000549316 9.66581 0.0800133 9.27875 0.234403C8.89169 0.388792 8.54002 0.615081 8.24384 0.90034L4.25879 4.73961H4.8759Z"
+                                fill="#007dff"
+                              />
+                              <path
+                                d="M20.0651 7.93601L17.6481 5.60943C17.5935 5.631 17.5352 5.64239 17.4762 5.64301H16.3815C15.8095 5.64434 15.2612 5.863 14.8558 6.25143L11.7063 9.2816C11.4226 9.55413 11.0381 9.70719 10.6373 9.70719C10.2365 9.70719 9.8521 9.55413 9.5684 9.2816L6.40644 6.24344C6.00116 5.85471 5.45281 5.63576 4.88069 5.63421H3.52853C3.47166 5.6335 3.41539 5.62294 3.36242 5.60303L0.933016 7.93601C0.335549 8.51234 0 9.29329 0 10.1075C0 10.9217 0.335549 11.7027 0.933016 12.279L3.35993 14.6152C3.41279 14.5949 3.46913 14.5843 3.52604 14.584H4.87737C5.44947 14.5824 5.99778 14.3634 6.40312 13.9748L9.56425 10.9318C9.85238 10.6671 10.2353 10.5195 10.6336 10.5195C11.0319 10.5195 11.4148 10.6671 11.703 10.9318L14.8525 13.9628C15.2579 14.3512 15.8062 14.5699 16.3782 14.5712H17.477C17.5361 14.5717 17.5944 14.5831 17.649 14.6048L20.0659 12.2782C20.3622 11.9931 20.5973 11.6546 20.7577 11.282C20.9181 10.9094 21.0006 10.51 21.0006 10.1067C21.0006 9.70339 20.9181 9.30403 20.7577 8.93144C20.5973 8.55885 20.3622 8.22032 20.0659 7.93521"
+                                fill="#007dff"
+                              />
+                            </g>
+                          </svg>
+                          <p class="mg-0 tx-gray-900 tx-18">Pix Copia & Cola</p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center border rounded-1 pd-x-8 pd-y-10"
+                        >
+                          <p id="pix-code" class="flex-fill text-break mg-0">
+                            OJWHBEF34579GB34IG
+                            KJLGN3054P97TG5349GUBN93U54GH5873GHB54IGUN45OIGN
+                          </p>
+                          <button
+                            id="copy-button"
+                            type="button"
+                            class="btn tx-primary tx-16 tx-medium text-concrete"
+                          >
+                            Copiar Código
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- pix -->
+                  <!-- boleto -->
+                  <div id="bill" class="hidden">
+                    <p class="tx-bold tx-14 mg-b-10 tx-primary">
+                      Pagamento via Boleto
+                    </p>
+                    <p class="tx-14 tx-gray-600 mg-b-32 wd-100p wd-md-50p">
+                      Pagamentos através de boletos bancários podem levar até
+                      <b>48 HORAS</b> para liberação das suas proxies
+                    </p>
+                    <div class="d-flex align-items-start mg-t-100">
+                      <img
+                        class="wd-85 mg-r-25"
+                        src="../assets/img/png/compra-segura.png"
+                        alt="Compra segura"
+                      />
+                      <p class="mg-0 tx-14 tx-normal tx-gray-800">
+                        A compra é 100% segura, não armazenamos nenhuma
+                        informação de pagamento. Todos os pagamentos
+                        sãoprocessados pela Vindi, a maior plataforma de
+                        pagamentos do Brasil.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- boleto -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="tx-18 tx-semibold mg-b-15">
+                    Resumo do upgrade do plano
+                  </h3>
+                  <div class="bg-gray-100 py-4 px-4 mg-b-25 rounded-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500">Ips atuais:</span>
+                      <span class="tx-16" id="actualProxies"></span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500"
+                        >Ips novos adicionados:</span
+                      >
+                      <span class="tx-16" id="newProxies"></span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500">Ips totais:</span>
+                      <span class="tx-16" id="totalProxies"></span>
+                    </div>
+                    <hr />
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <span class="tx-bold tx-14">Novo valor:</span>
+                      <div>
+                        <p
+                          class="tx-primary tx-bold tx-24 mg-0"
+                          id="subtotal-price"
+                        ></p>
+                        <p class="tx-14 tx-gray-600 text-end mg-0">/por mês</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mg-b-8"
+                  >
+                    <span class="tx-14 tx-gray-500">Desconto Pro rata*</span>
+                    <span class="tx-14 tx-semibold" id="discount"
+                      >-R$ 80,67</span
+                    >
+                  </div>
+                  <p class="mg-0 tx-12 tx-semibold tx-primary wd-70p">
+                    *Valor referente ao proporcional mensal dos dias que ja
+                    utilizou este mês
+                  </p>
+                  <hr />
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="tx-14 tx-gray-500">Total hoje</p>
+                    <p id="total-price" class="tx-24 tx-semibold"></p>
+                  </div>
+                  <button
+                    id="buy-button"
+                    class="btn btn-primary tx-normal w-100"
+                  >
+                    Comprar proxies
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Container -->
+      </div>
+      <!-- /main-content -->
+    </div>
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="las la-arrow-up"></i></a>
+
+    <!-- JQuery min js -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/moment/moment.js"></script>
+
+    <!--Internal Sparkline js -->
+    <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+
+    <!--Internal  Perfect-scrollbar js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--Internal Ion.rangeSlider.min js -->
+    <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+    <!-- Internal page script -->
+    <script src="../assets/js/comprar-proxies-pagamento.js"></script>
+
+    <!-- Eva-icons js -->
+    <script src="../assets/js/eva-icons.min.js"></script>
+
+    <!-- Sidebar js -->
+    <script src="../assets/plugins/side-menu/sidemenu.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- Theme Color js -->
+    <script src="../assets/js/themecolor.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>

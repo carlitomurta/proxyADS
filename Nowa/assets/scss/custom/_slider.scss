@@ -1,0 +1,30 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+  height: 12px;
+  background: #e5e7eb;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 26px;
+  width: 16px;
+  background-color: #74a3f1;
+  border-radius: 2px;
+  border: 2px solid $white;
+  transition: 0.2s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  height: 26px;
+  width: 16px;
+  background-color: #74a3f1;
+  border-radius: 2px;
+  border: 2px solid $white;
+  transition: 0.2s ease-in-out;
+}

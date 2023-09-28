@@ -18,7 +18,7 @@
     />
 
     <!-- Title -->
-    <title>ProxyADS - Comprar proxies</title>
+    <title>ProxyADS - Upgrade de plano</title>
 
     <!-- Favicon -->
     <link
@@ -242,19 +242,16 @@
             class="d-flex justify-content-between align-items-center mg-b-32"
           >
             <div class="flex-fill">
-              <h1 class="main-content-title mg-b-0">Comprar Proxies</h1>
+              <h1 class="main-content-title mg-b-0">Upgrade de plano</h1>
               <h6 class="mg-b-0 mg-b-lg-1 tx-16 tx-normal tx-gray-600">
-                Conheça nossos planos
+                Configure seu novo plano e prossiga para o pagamento.
               </h6>
             </div>
             <ol class="c-stepper">
-              <li class="c-stepper__item active done">
+              <li class="c-stepper__item active">
                 <h3 class="c-stepper__title">Configurar plano</h3>
               </li>
-              <li class="c-stepper__item active done">
-                <h3 class="c-stepper__title">Completar dados</h3>
-              </li>
-              <li class="c-stepper__item active">
+              <li class="c-stepper__item">
                 <h3 class="c-stepper__title">Pagamento</h3>
               </li>
               <li class="c-stepper__item">
@@ -267,45 +264,87 @@
           <div class="row">
             <div class="col-lg-7 col-xl-8">
               <div class="card">
-                <div class="card-body p-4">
-                  <h3 class="tx-18 tx-semibold tx-gray-900 mg-b-15">
-                    Selecione a forma de pagamento
+                <div class="card-body">
+                  <h3 class="tx-18 tx-semibold text-center tx-gray-900 mg-b-12">
+                    Quantos IP’s você precisa?
                   </h3>
+                  <h6 class="tx-18 tx-normal text-center tx-gray-600 mg-b-32">
+                    Quanto mais IP’s selecionar, maior será o desconto
+                  </h6>
+                  <div class="counter">
+                    <button
+                      id="sub-proxie"
+                      type="button"
+                      class="btn btn-primary button-icon"
+                    >
+                      <i class="fe fe-minus"></i>
+                    </button>
+                    <input
+                      type="number"
+                      pattern="\d*"
+                      id="count-marker"
+                      class="count-marker"
+                    />
+                    <button
+                      id="add-proxie"
+                      type="button"
+                      class="btn btn-primary button-icon"
+                    >
+                      <i class="fe fe-plus"></i>
+                    </button>
+                  </div>
+                  <p class="mg-y-25 text-center tx-gray-600">
+                    Valor por ip <b class="tx-gray-900">R$25,00/Mês</b>
+                  </p>
+                  <div id="slider">
+                    <input type="range" class="slider" id="rangeslider" />
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <p class="mg-0 tx-14 tx-medium" id="min-slider">01</p>
+                      <p class="mg-0 tx-14 tx-medium" id="max-slider">500</p>
+                    </div>
+                  </div>
                   <div
-                    class="btn-group"
-                    role="group"
-                    aria-label="Formas de pagamento"
+                    class="d-flex align-items-center gap-2 flex-wrap mg-t-30"
                   >
-                    <input
-                      type="radio"
-                      class="btn-payment-method"
-                      name="payment-method"
-                      id="credit-card"
-                      checked
-                    />
-                    <label class="btn btn-outline-primary" for="credit-card"
-                      >Cartão de crédito</label
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      id="amount-button"
+                      onclick="handleAmount(10)"
                     >
-
-                    <input
-                      type="radio"
-                      class="btn-payment-method"
-                      name="payment-method"
-                      id="pix"
-                    />
-                    <label class="btn btn-outline-primary" for="pix"
-                      >Pagar com PIX</label
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>10
+                    </button>
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      onclick="handleAmount(50)"
                     >
-
-                    <input
-                      type="radio"
-                      class="btn-payment-method"
-                      name="payment-method"
-                      id="bill"
-                    />
-                    <label class="btn btn-outline-primary" for="bill"
-                      >Boleto</label
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>50
+                    </button>
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      onclick="handleAmount(100)"
                     >
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>100
+                    </button>
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      onclick="handleAmount(250)"
+                    >
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>250
+                    </button>
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      onclick="handleAmount(500)"
+                    >
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>500
+                    </button>
+                    <button
+                      class="btn btn-outline-light border flex-fill"
+                      onclick="handleAmount(1000)"
+                    >
+                      <i class="fa fa-plus tx-primary mg-r-8"></i>1000
+                    </button>
                   </div>
                 </div>
               </div>
@@ -313,19 +352,35 @@
             <div class="col-lg-5 col-xl-4">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="tx-18 tx-semibold mg-b-15">Resumo do seu plano</h3>
+                  <h3 class="tx-18 tx-semibold mg-b-15">
+                    Resumo do upgrade do plano
+                  </h3>
                   <div class="bg-gray-100 py-4 px-4 mg-b-25 rounded-1">
-                    <p class="tx-bold tx-16">Valor do plano</p>
                     <div
                       class="d-flex justify-content-between align-items-center mg-b-25"
                     >
-                      <span class="tx-16 tx-gray-500">Ip's selecionados</span>
-                      <span class="tx-16" id="numProxies"></span>
+                      <span class="tx-16 tx-gray-500">Ips atuais:</span>
+                      <span class="tx-16" id="actualProxies"></span>
                     </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500"
+                        >Ips novos adicionados:</span
+                      >
+                      <span class="tx-16" id="newProxies"></span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mg-b-25"
+                    >
+                      <span class="tx-16 tx-gray-500">Ips totais:</span>
+                      <span class="tx-16" id="totalProxies"></span>
+                    </div>
+                    <hr />
                     <div
                       class="d-flex justify-content-between align-items-start"
                     >
-                      <span class="tx-bold tx-14">Subtotal:</span>
+                      <span class="tx-bold tx-14">Novo valor:</span>
                       <div>
                         <p
                           class="tx-primary tx-bold tx-24 mg-0"
@@ -335,13 +390,28 @@
                       </div>
                     </div>
                   </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mg-b-8"
+                  >
+                    <span class="tx-14 tx-gray-500">Desconto Pro rata*</span>
+                    <span class="tx-14 tx-semibold" id="discount"
+                      >-R$ 80,67</span
+                    >
+                  </div>
+                  <p class="mg-0 tx-12 tx-semibold tx-primary wd-70p">
+                    *Valor referente ao proporcional mensal dos dias que ja
+                    utilizou este mês
+                  </p>
                   <hr />
                   <div
                     class="d-flex align-items-center justify-content-between"
                   >
-                    <p class="tx-14 tx-gray-500">Total</p>
+                    <p class="tx-14 tx-gray-500">Total hoje</p>
                     <p id="total-price" class="tx-24 tx-semibold"></p>
                   </div>
+                  <button class="btn btn-primary tx-semibold w-100">
+                    Prosseguir Upgrade<i class="fa fa-arrow-right mg-l-8"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -378,8 +448,11 @@
     <!--Internal Ion.rangeSlider.min js -->
     <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
 
+    <!--Internal custom slider js -->
+    <script src="../assets/js/slider.js"></script>
+
     <!-- Internal page script -->
-    <script src="../assets/js/completar-dados.js"></script>
+    <script src="../assets/js/upgrade-plano.js"></script>
 
     <!-- Eva-icons js -->
     <script src="../assets/js/eva-icons.min.js"></script>
