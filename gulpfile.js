@@ -45,6 +45,16 @@ function serve(cb) {
 
 exports.default = gulp.series(serve, watch);
 
+gulp.task("css", function () {
+  return gulp
+    .src("Nowa/assets/scss/**/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(beautify.css({ indent_size: 4 }))
+    .pipe(sourcemaps.write(""))
+    .pipe(gulp.dest("Nowa/assets/css"));
+});
+
 //_______task for style-dark
 gulp.task("dark", function () {
   return gulp

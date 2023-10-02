@@ -26100,7 +26100,7 @@ a.option-dots {
     }
 
     .side-header {
-        width: 280px;
+        width: 240px;
         left: 0;
         right: 0;
         top: 0;
@@ -26115,7 +26115,7 @@ a.option-dots {
     }
 
     .app .app-sidebar {
-        left: -280px;
+        left: -240px;
     }
 
     .app.sidenav-toggled .app-content {
@@ -26164,7 +26164,7 @@ a.option-dots {
 
 @media (min-width: 992px) {
     .app-content {
-        margin-left: 280px;
+        margin-left: 240px;
     }
 
     .app.sidenav-toggled .avatar-xl {
@@ -26306,7 +26306,7 @@ a.option-dots {
 }
 
 .sidebar-mini .app-sidebar {
-    width: 280px !important;
+    width: 240px !important;
 }
 
 .app-sidebar {
@@ -26347,23 +26347,9 @@ a.option-dots {
 }
 
 .side-menu .slide .side-menu__item {
-    padding: 16px 91px 16px 30px;
-    margin: 16px 0px 16px 0px;
+    padding: 10px 91px 10px 30px;
+    margin: 0;
     border-radius: 0;
-}
-
-.side-menu .slide .side-menu__item .side-menu__item_icon {
-    margin-right: 12px;
-}
-
-.side-menu .slide .side-menu__item:hover .side-menu__item_icon {
-    color: var(--primary-bg-color);
-    fill: var(--primary-bg-color) !important;
-}
-
-.side-menu .slide .side-menu__item.active .side-menu__item_icon {
-    color: #3b4863;
-    fill: #3b4863 !important;
 }
 
 .slide {
@@ -26441,15 +26427,15 @@ a.option-dots {
 .slide:hover .side-menu__label,
 .slide:hover .angle,
 .slide:hover .side-menu__icon {
-    color: #9499a1;
-    fill: #9499a1;
+    color: #7b8191;
+    fill: #7b8191;
 }
 
 .slide-item.active,
 .slide-item:hover,
 .slide-item:focus {
     text-decoration: none;
-    color: #9499a1;
+    color: #b5c1d2;
 }
 
 .slide-item.active,
@@ -26483,7 +26469,7 @@ a.option-dots {
 }
 
 .slide.is-expanded a {
-    color: #5e6369;
+    color: #7b8191;
     text-decoration: none;
 }
 
@@ -26494,7 +26480,7 @@ a.option-dots {
     top: 10px;
     left: 15px;
     font-size: 9px;
-    color: #9499a1;
+    color: #7b8191;
     font-weight: 900;
 }
 
@@ -26504,7 +26490,7 @@ a.option-dots {
     position: absolute;
     left: 35px !important;
     font-size: 9px;
-    color: #9499a1;
+    color: #7b8191;
     font-weight: 900;
 }
 
@@ -26517,8 +26503,8 @@ a.option-dots {
     line-height: 20px;
     border-radius: 2px;
     text-align: center;
-    color: #9499a1;
-    fill: #9499a1;
+    color: #7b8191;
+    fill: #7b8191;
 }
 
 .side-menu__icon {
@@ -26537,9 +26523,9 @@ a.option-dots {
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    color: #9499a1;
+    color: #7b8191;
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     vertical-align: middle;
     font-weight: 400;
@@ -26556,7 +26542,7 @@ a.option-dots {
 }
 
 .app-sidebar .side-item.side-item-category {
-    color: #9499a1;
+    color: #7b8191;
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 500;
@@ -26592,7 +26578,7 @@ a.option-dots {
     font-size: 13px;
     padding: 8px 35px 8px 35px;
     font-weight: 400;
-    color: #9499a1;
+    color: #7b8191;
 }
 
 .slide-item .icon {
@@ -26663,7 +26649,7 @@ a.option-dots {
         line-height: 1;
         opacity: 0;
         background: #fff;
-        color: #9499a1;
+        color: #7b8191;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
         -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
@@ -26719,7 +26705,7 @@ a.option-dots {
         padding: 0;
         margin: 0;
         left: 0;
-        color: #9499a1;
+        color: #7b8191;
         opacity: 1;
         background: transparent;
         font-size: 12px;
@@ -26991,7 +26977,7 @@ a.option-dots {
 @media (min-width: 992px) {
     .app.sidebar-mini.sidenav-toggled-open .app-sidebar {
         left: 0;
-        width: 280px !important;
+        width: 240px !important;
     }
 
     .app.sidebar-mini.sidenav-toggled-open .side-menu__item {
@@ -27042,7 +27028,7 @@ a.option-dots {
     }
 
     .app.sidebar-mini.sidenav-toggled-open .main-sidebar-header {
-        width: 280px;
+        width: 240px;
     }
 
     .app.sidebar-mini.sidenav-toggled.sidenav-toggled-open .desktop-logo {
@@ -27104,14 +27090,14 @@ a.option-dots {
 
 @media (min-width: 1200px) {
     .main-sidebar-sticky+.main-content {
-        margin-left: 280px;
+        margin-left: 240px;
     }
 }
 
 .main-sidebar-header {
-    height: 96px;
-    padding: 32px 24px;
-    width: 280px;
+    height: 64px;
+    padding: 12px 20px;
+    width: 240px;
     background: #fff;
     border-bottom: 1px solid #ededf5;
     position: fixed;
@@ -27127,7 +27113,7 @@ a.option-dots {
 }
 
 .main-sidemenu {
-    margin-top: 128px;
+    margin-top: 85px;
     height: 90%;
 }
 
@@ -27204,11 +27190,11 @@ a.option-dots {
     }
 
     .icontext-menu.app.sidebar-mini.sidenav-toggled-open .app-sidebar {
-        width: 280px !important;
+        width: 240px !important;
     }
 
     .icontext-menu.app.sidebar-mini.sidenav-toggled-open .main-sidebar-header {
-        width: 280px !important;
+        width: 240px !important;
     }
 
     .icontext-menu.app.sidebar-mini.sidenav-toggled-open .close-toggle {
@@ -27428,7 +27414,7 @@ a.option-dots {
     }
 
     .hover-submenu .side-header {
-        width: 280px;
+        width: 240px;
         left: 0;
         right: 0;
         top: 0;
@@ -27660,7 +27646,7 @@ a.option-dots {
     }
 
     .hover-submenu1 .side-header {
-        width: 280px;
+        width: 240px;
         left: 0;
         right: 0;
         top: 0;
