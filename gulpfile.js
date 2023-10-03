@@ -36,7 +36,7 @@ function serve(cb) {
   browserSync.init({
     server: {
       baseDir: "Nowa",
-      index: "HTML/upgrade-plano.html",
+      index: "HTML/completar-dados.html",
     },
   });
   console.log("serve processed");
