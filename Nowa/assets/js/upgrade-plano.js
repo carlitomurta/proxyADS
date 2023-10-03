@@ -25,27 +25,6 @@ const currencyFormatter = new Intl.NumberFormat("pt-BR", {
   minimumFractionDigits: 2,
 });
 
-// const slider = $(".rangeslider")
-//   .ionRangeSlider({
-//     min: actualProxies,
-//     max: maxProxies,
-//     from: actualProxies,
-//     onChange: function (data) {
-//       newProxies = data.from - actualProxies;
-//       counter.value = actualProxies + newProxies;
-//       totalProxies = actualProxies + newProxies;
-//       subtotal.innerHTML = currencyFormatter.format(
-//         newProxies * proxieValueMultiplier
-//       );
-//       total.innerHTML = currencyFormatter.format(
-//         newProxies * proxieValueMultiplier
-//       );
-//       newProxiesElement.innerHTML = String(newProxies).padStart(2, "0");
-//       totalProxiesElement.innerHTML = String(totalProxies).padStart(2, "0");
-//     },
-//   })
-//   .data("ionRangeSlider");
-
 $(function () {
   "use strict";
 
@@ -120,6 +99,10 @@ $(function () {
     );
     newProxiesElement.innerHTML = String(newProxies).padStart(2, "0");
     totalProxiesElement.innerHTML = String(totalProxies).padStart(2, "0");
+  });
+
+  $("#upgrade-button").on("click", function (e) {
+    window.location.href = "upgrade-plano-pagamento.html";
   });
 });
 
