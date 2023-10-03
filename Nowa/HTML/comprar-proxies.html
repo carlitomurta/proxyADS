@@ -156,208 +156,221 @@
             </ol>
           </div>
           <!-- title -->
-
-          <div class="row">
-            <div class="col-lg-7 col-xl-8">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="tx-18 tx-semibold text-center tx-gray-900 mg-b-12">
-                    Quantos IP’s você precisa?
-                  </h3>
-                  <h6 class="tx-18 tx-normal text-center tx-gray-600 mg-b-32">
-                    Quanto mais IP’s selecionar, maior será o desconto
-                  </h6>
-                  <div class="counter">
-                    <button
-                      id="sub-proxie"
-                      type="button"
-                      class="btn btn-primary button-icon"
+          <!-- CONFIGURAR PLANO -->
+          <div>
+            <div class="row">
+              <div class="col-lg-7 col-xl-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h3
+                      class="tx-18 tx-semibold text-center tx-gray-900 mg-b-12"
                     >
-                      <i class="fe fe-minus"></i>
-                    </button>
-                    <input
-                      type="number"
-                      pattern="\d*"
-                      id="count-marker"
-                      class="count-marker"
-                    />
-                    <button
-                      id="add-proxie"
-                      type="button"
-                      class="btn btn-primary button-icon"
-                    >
-                      <i class="fe fe-plus"></i>
-                    </button>
+                      Quantos IP’s você precisa?
+                    </h3>
+                    <h6 class="tx-18 tx-normal text-center tx-gray-600 mg-b-32">
+                      Quanto mais IP’s selecionar, maior será o desconto
+                    </h6>
+                    <div class="counter">
+                      <button
+                        id="sub-proxie"
+                        type="button"
+                        class="btn btn-primary button-icon"
+                      >
+                        <i class="fe fe-minus"></i>
+                      </button>
+                      <input
+                        type="number"
+                        pattern="\d*"
+                        id="count-marker"
+                        class="count-marker"
+                      />
+                      <button
+                        id="add-proxie"
+                        type="button"
+                        class="btn btn-primary button-icon"
+                      >
+                        <i class="fe fe-plus"></i>
+                      </button>
+                    </div>
+                    <p class="mg-y-25 text-center tx-gray-600">
+                      Valor por ip <b class="tx-gray-900">R$25,00/Mês</b>
+                    </p>
+                    <div id="slider">
+                      <input type="range" class="slider" id="rangeslider" />
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="mg-0 tx-14 tx-medium">01</p>
+                        <p class="mg-0 tx-14 tx-medium">500</p>
+                      </div>
+                    </div>
                   </div>
-                  <p class="mg-y-25 text-center tx-gray-600">
-                    Valor por ip <b class="tx-gray-900">R$25,00/Mês</b>
-                  </p>
-                  <div id="slider">
-                    <input type="range" class="slider" id="rangeslider" />
+                </div>
+              </div>
+              <div class="col-lg-5 col-xl-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="tx-18 tx-semibold mg-b-15">
+                      Resumo do seu plano
+                    </h3>
+                    <div class="bg-gray-100 py-4 px-4 mg-b-25 rounded-1">
+                      <p class="tx-bold tx-16">Valor do plano</p>
+                      <div
+                        class="d-flex justify-content-between align-items-center mg-b-25"
+                      >
+                        <span class="tx-16 tx-gray-500">Ip's selecionados</span>
+                        <span class="tx-16" id="numProxies"></span>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <span class="tx-bold tx-14">Subtotal:</span>
+                        <div>
+                          <p
+                            class="tx-primary tx-bold tx-24 mg-0"
+                            id="subtotal-price"
+                          ></p>
+                          <p class="tx-14 tx-gray-600 text-end mg-0">
+                            /por mês
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
                     <div
                       class="d-flex align-items-center justify-content-between"
                     >
-                      <p class="mg-0 tx-14 tx-medium">01</p>
-                      <p class="mg-0 tx-14 tx-medium">500</p>
+                      <p class="tx-14 tx-gray-500">Total</p>
+                      <p id="total-price" class="tx-24 tx-semibold"></p>
                     </div>
+                    <button
+                      id="next-button"
+                      type="button"
+                      class="btn btn-primary tx-semibold w-100"
+                      onclick=""
+                    >
+                      Avançar<i class="fa fa-arrow-right mg-l-8"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="tx-18 tx-semibold mg-b-15">Resumo do seu plano</h3>
-                  <div class="bg-gray-100 py-4 px-4 mg-b-25 rounded-1">
-                    <p class="tx-bold tx-16">Valor do plano</p>
-                    <div
-                      class="d-flex justify-content-between align-items-center mg-b-25"
-                    >
-                      <span class="tx-16 tx-gray-500">Ip's selecionados</span>
-                      <span class="tx-16" id="numProxies"></span>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-start"
-                    >
-                      <span class="tx-bold tx-14">Subtotal:</span>
-                      <div>
-                        <p
-                          class="tx-primary tx-bold tx-24 mg-0"
-                          id="subtotal-price"
-                        ></p>
-                        <p class="tx-14 tx-gray-600 text-end mg-0">/por mês</p>
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <p class="tx-14 tx-gray-500">Total</p>
-                    <p id="total-price" class="tx-24 tx-semibold"></p>
-                  </div>
-                  <button class="btn btn-primary tx-semibold w-100">
-                    Avançar<i class="fa fa-arrow-right mg-l-8"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body p-32">
-                  <p class="mg-0 tx-18 tx-semibold">
-                    Lorem ipsum dolor sit amet
-                  </p>
-                  <p class="mg-0 tx-18 tx-gray-600 mg-b-40">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus vel risus et elit maximus gravida.
-                  </p>
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body p-32">
+                    <p class="mg-0 tx-18 tx-semibold">
+                      Lorem ipsum dolor sit amet
+                    </p>
+                    <p class="mg-0 tx-18 tx-gray-600 mg-b-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus vel risus et elit maximus gravida.
+                    </p>
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="d-flex align-items-start p-4">
-                        <div class="brand-circle-icon">
-                          <img
-                            src="../assets/img/png/link.png"
-                            alt="link icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
-                          <p class="mg-0 tx-normal tx-14">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vivamus vel risus et elit maximus gravida.
-                          </p>
+                      <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-start p-4">
+                          <div class="brand-circle-icon">
+                            <img
+                              src="../assets/img/png/link.png"
+                              alt="link icon"
+                            />
+                          </div>
+                          <div>
+                            <p class="mg-0 tx-medium tx-16">Lorem ipsum</p>
+                            <p class="mg-0 tx-normal tx-14">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Vivamus vel risus et elit maximus gravida.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -366,6 +379,7 @@
               </div>
             </div>
           </div>
+          <!-- CONFIGURAR PLANO -->
         </div>
         <!-- /Container -->
       </div>
@@ -391,9 +405,6 @@
 
     <!-- Moment js -->
     <script src="../assets/plugins/raphael/raphael.min.js"></script>
-
-    <!--Internal  Perfect-scrollbar js -->
-    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
     <!--Internal Ion.rangeSlider.min js -->
     <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>

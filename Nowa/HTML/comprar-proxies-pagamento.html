@@ -66,7 +66,7 @@
             <div>
               <a
                 class="d-flex align-items-center tx-primary tx-semibold tx-14"
-                href="index.html"
+                href="completar-dados.html"
                 ><i class="fe fe-arrow-left mg-r-4"></i>Voltar</a
               >
             </div>
@@ -141,16 +141,16 @@
               </h6>
             </div>
             <ol class="c-stepper">
-              <li class="c-stepper__item active done">
+              <li id="step-config-plano" class="c-stepper__item active done">
                 <h3 class="c-stepper__title">Configurar plano</h3>
               </li>
-              <li class="c-stepper__item active done">
+              <li id="step-completar-dados" class="c-stepper__item active done">
                 <h3 class="c-stepper__title">Completar dados</h3>
               </li>
-              <li class="c-stepper__item active">
+              <li id="step-pagamento" class="c-stepper__item active">
                 <h3 class="c-stepper__title">Pagamento</h3>
               </li>
-              <li class="c-stepper__item">
+              <li id="step-confirmacao-pagamento" class="c-stepper__item">
                 <h3 class="c-stepper__title">Confirmação</h3>
               </li>
             </ol>
@@ -483,6 +483,83 @@
                     </div>
                   </div>
                   <!-- boleto -->
+                  <!-- confirmacao de pagamento -->
+                  <div id="payment-success" class="hidden">
+                    <div class="d-flex align-items-center mg-b-32">
+                      <div class="success-icon mg-r-32">
+                        <i class="far fa-check-circle"></i>
+                      </div>
+                      <h1 class="tx-18 tx-semibold tx-gray-900 mg-0">
+                        Pagamento realizado com sucesso!
+                      </h1>
+                    </div>
+                    <div class="p-32 bg-primary-100 rounded-1 mg-b-32">
+                      <p
+                        class="tx-14 tx-semibold tx-primary text-center mg-b-15"
+                      >
+                        Em até 5 minutos seus proxies serão liberados
+                      </p>
+                      <button class="btn btn-primary d-block tx-medium mx-auto">
+                        Ver meus proxies
+                      </button>
+                    </div>
+                    <div class="row mg-b-32">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mg-b-8 tx-14 tx-semibold">Nome</p>
+                        <p class="mg-0 tx-14 tx-gray-600">Lorem ipsum</p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mg-b-8 tx-14 tx-semibold">E-mail</p>
+                        <p class="mg-0 tx-14 tx-gray-600">samuel@email.com</p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mg-b-8 tx-14 tx-semibold">Contato</p>
+                        <p class="mg-0 tx-14 tx-gray-600">(11) 91234-5678</p>
+                      </div>
+                    </div>
+                    <div class="row mg-b-32">
+                      <div class="col-12 col-sm-4">
+                        <p class="mg-b-8 tx-14 tx-semibold">
+                          Método de pagamento
+                        </p>
+                        <div class="d-flex align-items-center">
+                          <img
+                            class="border rounded px-2 mg-r-4"
+                            width="50"
+                            src="../assets/img/visa.png"
+                            alt="Visa Brand"
+                          />
+                          <div>
+                            <p class="mg-0 tx-14 tx-gray-600">
+                              Cartão de crédito
+                            </p>
+                            <p class="mg-0 tx-14 tx-gray-600">
+                              **** **** **** 4789
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-8">
+                        <p class="mg-b-8 tx-14 tx-semibold">
+                          Data e hora da confirmação
+                        </p>
+                        <p class="mg-0 tx-14 tx-gray-600">
+                          Sexta-feira, 14 de Julho de 2023
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-end gap-2"
+                    >
+                      <button class="btn btn-outline-light">
+                        <i class="fa fa-print mg-r-8"></i>Imprimir
+                      </button>
+                      <button class="btn btn-outline-light">
+                        <i class="far fa-file-pdf mg-r-8"></i>Download PDF
+                      </button>
+                    </div>
+                  </div>
+                  <!-- confirmacao de pagamento -->
                 </div>
               </div>
             </div>
@@ -531,10 +608,17 @@
                   </div>
                   <button
                     id="buy-button"
-                    class="btn btn-primary tx-normal w-100"
+                    class="btn btn-primary tx-normal w-100 mg-b-8"
                   >
                     Comprar proxies
                   </button>
+                  <a
+                    id="back-button"
+                    class="btn btn-outline-light tx-normal w-100"
+                    href="completar-dados.html"
+                  >
+                    Voltar
+                  </a>
                 </div>
               </div>
             </div>
@@ -572,7 +656,7 @@
     <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
 
     <!-- Internal page script -->
-    <script src="../assets/js/comprar-proxies-pagamento.js"></script>
+    <script src="../assets/js/pagamento.js"></script>
 
     <!-- Eva-icons js -->
     <script src="../assets/js/eva-icons.min.js"></script>

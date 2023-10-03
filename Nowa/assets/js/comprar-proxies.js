@@ -10,7 +10,7 @@ $(function () {
   const total = $("#total-price")[0];
   const numProxiesElement = $("#numProxies")[0];
 
-  const proxieValueMultiplier = 25;
+  const proxieValueMultiplier = 25; // altere aqui, o valor de cada proxie para aplicar o desconto progressivo
   const maxProxies = 500;
   let numProxies = 5;
 
@@ -53,7 +53,8 @@ $(function () {
 
   $("#add-proxie").on("click", function (e) {
     e.preventDefault();
-    if (numProxies <= maxProxies) numProxies += 1;
+    numProxies = Number(numProxies);
+    if (numProxies < maxProxies) numProxies += 1;
     counter.value = numProxies;
     slider.value = numProxies;
     slider.dispatchEvent(changeEvent);
@@ -67,6 +68,7 @@ $(function () {
   });
   $("#sub-proxie").on("click", function (e) {
     e.preventDefault();
+    numProxies = Number(numProxies);
     if (numProxies > 1) numProxies -= 1;
     counter.value = numProxies;
     slider.value = numProxies;
@@ -78,5 +80,10 @@ $(function () {
       numProxies * proxieValueMultiplier
     );
     numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
+  });
+
+  $("#next-button").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = "/completar-dados.html";
   });
 });

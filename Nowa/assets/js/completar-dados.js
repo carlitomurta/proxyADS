@@ -1,3 +1,7 @@
+const cpfRadio = document.getElementById("cpfRadio");
+
+const cpfElement = document.getElementById("cpf");
+
 $(function () {
   "use strict";
 
@@ -29,6 +33,17 @@ $(function () {
   );
 
   numProxiesElement.innerHTML = String(numProxies).padStart(2, "0");
+
+  $("#cpfRadio").on("click", function (e) {
+    cpfElement.setAttribute("placeholder", "CPF");
+    cpfElement.setAttribute("maxlength", 14);
+    cpfElement.value = "";
+  });
+  $("#cnpjRadio").on("click", function (e) {
+    cpfElement.setAttribute("placeholder", "CNPJ");
+    cpfElement.setAttribute("maxlength", 18);
+    cpfElement.value = "";
+  });
 });
 
 const handlePhone = (event) => {
@@ -44,17 +59,23 @@ const phoneMask = (value) => {
   return value;
 };
 
-const handleCPF = (event) => {
+const handleMask = (event) => {
   let input = event.target;
-  input.value = cpfMask(input.value);
+  input.value = cpfCnpjMask(cpfRadio.checked ? "cpf" : "cpnj", input.value);
 };
 
-const cpfMask = (v) => {
-  v = v.replace(/\D/g, "");
-  v = v.replace(/(\d{3})(\d)/, "$1.$2");
-  v = v.replace(/(\d{3})(\d)/, "$1.$2");
-  v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-  return v;
+const cpfCnpjMask = (type, v) => {
+  if (type === "cpf") {
+    v = v.replace(/\D/g, "");
+    v = v.replace(/(\d{3})(\d)/, "$1.$2");
+    v = v.replace(/(\d{3})(\d)/, "$1.$2");
+    v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    return v;
+  } else {
+    v = v.replace(/\D/g, "");
+    v = v.replace(/^(\d{2})(\d{3})?(\d{3})?(\d{4})?(\d{2})?/, "$1.$2.$3/$4-$5");
+    return v;
+  }
 };
 
 const handleZipCode = (event) => {
@@ -73,6 +94,6 @@ let registerForm = $("#register-form")[0];
 
 registerForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(e);
   console.log("Formulário enviado");
+  window.location.href = "/comprar-proxies-pagamento.html";
 });
